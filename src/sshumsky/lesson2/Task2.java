@@ -1,4 +1,4 @@
-package s.shumsky.lesson2;
+package sshumsky.lesson2;
 
 import java.util.Scanner;
 
