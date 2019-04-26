@@ -1,4 +1,4 @@
-package IG.les1;
+package i.khlebovets;
 
 public class Task1
 {
