@@ -2,11 +2,11 @@ package bolshun.Leson1;
 
 public class Task3 {
     public static void main(String[] args) {
-        for (byte i = 0; i != -1; i++) {
-            String binary = Integer.toBinaryString(i);
-            if (binary.length ()>8) binary=binary.substring(binary.length()-8);
-            binary = String.format("%8s", binary).replace("", "0");
-            System.out.printf("%8s %4d %n",binary, i);
+        int i = 3;
+        int j = 4;
+        int a = i*i;
+        int b = j*j;
+        int k = a + b;
+        System.out.println(i + "*" + i + "+" + j + "*" + j + "=" + k);
         }
     }
-}
