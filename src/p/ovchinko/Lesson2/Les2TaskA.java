@@ -1,4 +1,4 @@
-package p.ovchinko;
+package p.ovchinko.Lesson2;
 
 public class Les2TaskA {
     static int square(int a) {
