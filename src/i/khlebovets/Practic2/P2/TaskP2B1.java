@@ -1,28 +1,21 @@
-package i.khlebovets.Practic2;
+package i.khlebovets.Practic2.P2;
 
 import java.util.Scanner;
 
+public class TaskP2B1 {
 
-public class TaskB1 {
 
-    private static double dis(int a, int b, int c) {
-        double k = a;
+    public static double dis(int a, int b, int c) {
+        double k = (double)a;
         System.out.println("ВЫ ВВЕЛИ  " + a);
-        double l = b;
+        double l = (double)b;
         System.out.println("ВЫ ВВЕЛИ  " + b);
-        double m = c;
+        double m = (double)c;
         System.out.println("ВЫ ВВЕЛИ  " + c);
-
-        double d;
-        d = l * l - 4 * k * m;
-
+        double d = l * l - 4.0D * k * m;
         System.out.println("Дискриминант равен\t" + d);
-
-
         return d;
-
     }
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -32,24 +25,18 @@ public class TaskB1 {
         int b = sc.nextInt();
         System.out.println("Введите 3ое число!!!");
         int c = sc.nextInt();
-
         double d = dis(a, b, c);
-
-        if (d > 0) {
-            double x1, x2;
-
-            x1 = (-b + Math.sqrt(d)) / (2 * a);
-            x2 = (-b - Math.sqrt(d)) / (2 * a);
-
-            System.out.println("Первый корень: " + x1 + " Второй корень: " + x2);
-        } else if (d == 0) {
-            double x;
-            x = -b / (2 * a);
-
+        double x;
+        if (d > 0.0D) {
+            x = ((double)(-b) + Math.sqrt(d)) / (double)(2 * a);
+            double x2 = ((double)(-b) - Math.sqrt(d)) / (double)(2 * a);
+            System.out.println("Первый корень: " + x + " Второй корень: " + x2);
+        } else if (d == 0.0D) {
+            x = (double)(-b / (2 * a));
             System.out.println("Дискриминант имеет один корень: " + x);
         } else {
             System.out.println("Отрицательный Дискриминант");
         }
+
     }
 }
-

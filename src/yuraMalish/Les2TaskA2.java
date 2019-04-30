@@ -1,6 +1,6 @@
-package y.Mal.lesson2;
+package yuraMalish;
 
-public class B {
+public class Les2TaskA2 {
     public static void main(String[] args){
         String s = "I lean Java";
         System.out.println(s);
