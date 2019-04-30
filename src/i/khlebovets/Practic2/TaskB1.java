@@ -1,29 +1,25 @@
 package i.khlebovets.Practic2;
 
+
+
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
+
 import java.util.Scanner;
 
-
-
-
-    public class TaskB1
+public class TaskB1
+{
+    public class TaskA1
     {
 
         public static double dis (int a, int b, int c)
         {
-            double k=a;
+            int k= Math.sqrt(a);
             System.out.println("ВЫ ВВЕЛИ  "+a);
-            double l= b;
+            int l= Math.sqrt(b);
             System.out.println("ВЫ ВВЕЛИ  "+b);
-            double m= c;
+            int m= Math.sqrt(c);
             System.out.println("ВЫ ВВЕЛИ  "+c);
-
-            double d;
-            d=l*l-4*k*m;
-
-            System.out.println("Дискриминант равен\t"+d);
-
-
-            return d;
+            return (double)k, (double)l, (double)m;
 
         }
 
@@ -38,30 +34,11 @@ import java.util.Scanner;
             System.out.println("Введите 3ое число!!!");
             int c=sc.nextInt();
 
-            double d=dis(a,b,c);
+            dis(a,b,c);
 
-            if(d>0)
-            {
-                double x1,x2;
 
-                x1=(-b+Math.sqrt(d))/(2*a);
-                x2=(-b-Math.sqrt(d))/(2*a);
-
-                System.out.println("Первый корень: "+x1+" Второй корень: "+x2);
-            }
-            else if (d==0)
-            {
-                double x;
-                x=-b/(2*a);
-
-                System.out.println("Дискриминант имеет один корень: "+x);
-            }
-            else
-                {
-                System.out.println("Отрицательный Дискриминант");
-                }
-
+            System.out.println();
 
         }
     }
-
+}
