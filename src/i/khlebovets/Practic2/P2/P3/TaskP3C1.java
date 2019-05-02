@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class TaskP3C1
 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Укажите размер желаемой зарплаты");
-        int a = sc.nextInt();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Укажите размер желаемой зарплаты");
+            int a = sc.nextInt();
         if (a<300||a>3000){
             System.out.println("Мы Вам перезвоним!!!");
         }
