@@ -1,4 +1,4 @@
-package mkavalevich;
+package mkavalevich.lesson02;
 
 public class TaskA3 {
     public static void main(String[] args) {
